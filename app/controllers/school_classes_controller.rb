@@ -4,6 +4,8 @@ class SchoolClassesController < ApplicationController
   end
 
   def create
+    @school_class = SchoolClass.new
+    @school_class
   end
   
   def show
@@ -13,6 +15,12 @@ class SchoolClassesController < ApplicationController
   end
   
   def update
+  end
+  
+  private
+  
+  def school_class_params
+    
   end
 
 end
