@@ -5,4 +5,6 @@ class CreateSchoolClasses < ActiveRecord::Migration
       t.string :title
       t.integer :room_number
     end
+  end
+  
 end
