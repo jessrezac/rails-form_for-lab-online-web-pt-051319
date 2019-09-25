@@ -1,7 +1,5 @@
 class StudentsController < ApplicationController
   
-  :new, :create, :show, :edit, :update
-  
   def new
   end
 
