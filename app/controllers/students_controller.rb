@@ -4,6 +4,8 @@ class StudentsController < ApplicationController
   end
 
   def create
+    @student = Student.create(student_params)
+    redirect_to student_path(@student)
   end
   
   def show
@@ -13,6 +15,8 @@ class StudentsController < ApplicationController
   end
   
   def update
+    @student = Student.update(student_params)
+    
   end
   
   private
