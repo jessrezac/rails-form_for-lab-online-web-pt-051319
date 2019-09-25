@@ -4,8 +4,7 @@ class SchoolClassesController < ApplicationController
   end
 
   def create
-    @school_class = SchoolClass.new
-    @school_class
+    SchoolClass.create(school_class_params)
   end
   
   def show
@@ -20,7 +19,7 @@ class SchoolClassesController < ApplicationController
   private
   
   def school_class_params
-    
+    params.require(:school_class).permit(:title, :room_number)
   end
 
 end
